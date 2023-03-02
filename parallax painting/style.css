@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+div img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+#block {
+  width: 100px;
+  height: 1000px;
+}
+
+.layerOne {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.layerTwo {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.layerThree {
+  position: fixed;
+  transform: scale(1.3);
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.layerFour {
+  position: fixed;
+  transform: scale(1.5);
+  bottom: 0;
+  top: -20px;
+  right: -20px;
+  left: 0;
+  z-index: -3;
+}
+
+@media (min-aspect-ratio: 16/11) {
+  #bgThree {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/11) {
+  #bgThree {
+      width: auto;
+      height: 100%;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/11) {
+  #bgOne {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/11) {
+  #bgOne {
+      width: auto;
+      height: 100%;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/11) {
+  #bgTwo {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/11) {
+  #bgTwo {
+      width: auto;
+      height: 100%;
+  }
+}
+
+
+@media (min-aspect-ratio: 16/11) {
+  #bgFour {
+      width: 100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/11) {
+  #bgFour {
+      width: auto;
+      height: 100%;
+  }
+}
